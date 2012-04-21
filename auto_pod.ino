@@ -39,3 +39,7 @@ int start() {
     return 1;
   }
 }
+
+void poll_gps() {
+   
+}
