@@ -28,3 +28,14 @@ void loop() {
   lcd.setCursor(0,1);
   lcd.print(millis()/1000); 
 }
+
+int start() {
+  lcd.setCursor(0,0);
+  lcd.print("Set base to 0, 0");
+  lcd.setCursor(0,1);
+  lcd.print("Press * when done");
+  char key = keypad.getKey();
+  if(key == '*'){
+    return 1;
+  }
+}
